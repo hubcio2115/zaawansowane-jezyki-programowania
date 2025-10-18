@@ -1,5 +1,5 @@
-package Lab01.Zad01
-import Lab01.Zad01.findPrimarySums
+package Lab01
+import Lab01.findPrimarySums
 
 class Zad01Test extends munit.FunSuite {
   test("lists correct components up until 8") {

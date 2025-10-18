@@ -14,7 +14,7 @@
   *
   * 3 + 5 = 8
   */
-package Lab01.Zad01
+package Lab01
 
 import scala.annotation.tailrec
 import Lab02.isPrime
