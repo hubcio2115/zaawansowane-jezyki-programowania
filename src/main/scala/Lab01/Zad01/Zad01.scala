@@ -17,6 +17,7 @@
 package Lab01.Zad01
 
 import scala.annotation.tailrec
+import Lab02.isPrime
 
 def Zad01(): Unit = {
   print("Dla: n = ")
@@ -44,21 +45,4 @@ private def findPrimeSumPairs(
     return findPrimeSumPairs(n, curr + 1, acc :+ (curr, n - curr))
 
   findPrimeSumPairs(n, curr + 1, acc)
-}
-
-private def isPrime(n: Int): Boolean = {
-  if (n < 2) return false
-  if (n == 2) return true
-  if (n % 2 == 0) return false
-
-  val sqrt = Math.sqrt(n)
-  isPrimeTailRec(n, sqrt)
-}
-
-@tailrec
-private def isPrimeTailRec(n: Int, end: Double, curr: Int = 3): Boolean = {
-  if (curr > end) return true
-  if (n % curr == 0) return false
-
-  isPrimeTailRec(n, end, curr + 2)
 }
