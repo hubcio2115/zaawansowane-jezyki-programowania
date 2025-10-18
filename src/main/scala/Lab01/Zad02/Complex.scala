@@ -1,4 +1,4 @@
-package Lab01.Zad02
+package Lab01
 
 class Complex(val re: Double, val im: Double) extends Ordered[Complex] {
   def this(re: Double) = this(re, 0)
